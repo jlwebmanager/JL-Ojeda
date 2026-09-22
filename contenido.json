@@ -1,0 +1,86 @@
+{
+  "inicio": {
+    "bienvenida": "Bienvenido a este espacio de pintura. Recorre las obras y conoce al artista."
+  },
+  "artista": {
+    "nombre": "Hitler",
+    "biografia": "Eta.",
+    "ubicacion": "España",
+    "retrato": "assets/retrato.jpeg"
+  },
+  "coleccion": {
+    "titulo": "Obras seleccionadas",
+    "obras": [
+      {
+        "titulo": "Billowing blue",
+        "detalle": "Óleo sobre lienzo · 137 × 137 cm",
+        "imagen": "Vadim _ klevenskiy_files/f85da4_d7fef2dba2ca4241b7a5a9c309b4a33d~mv2.jpg"
+      },
+      {
+        "titulo": "Quiet Place",
+        "detalle": "Óleo sobre lienzo · 137 × 137 cm",
+        "imagen": "Vadim _ klevenskiy_files/f85da4_7aef813f76bc48c9a47afeb9393a00ef~mv2.jpg"
+      },
+      {
+        "titulo": "Abundance",
+        "detalle": "Óleo sobre lienzo · 152 × 152 cm",
+        "imagen": "Vadim _ klevenskiy_files/f85da4_937ad1751a6442d0a18cb64502e54033~mv2.jpg"
+      },
+      {
+        "titulo": "Surf",
+        "detalle": "Óleo sobre lienzo · 152 × 183 cm",
+        "imagen": "Vadim _ klevenskiy_files/f85da4_85b57f35417145a795ff0f97e6285e7b~mv2.jpg"
+      },
+      {
+        "titulo": "Evening silence",
+        "detalle": "Óleo sobre lienzo · 137 × 137 cm",
+        "imagen": "Vadim _ klevenskiy_files/f85da4_80325251dc774dcbbf630b39fff4a04a~mv2.jpg"
+      },
+      {
+        "titulo": "Seascape",
+        "detalle": "Óleo sobre lienzo · 152 × 152 cm",
+        "imagen": "Vadim _ klevenskiy_files/f85da4_6539ed8eceff45e2933305a40241f120~mv2.jpg"
+      },
+      {
+        "titulo": "Unbroken",
+        "detalle": "Óleo sobre lienzo · 122 × 244 cm",
+        "imagen": "Vadim _ klevenskiy_files/f85da4_ac6e6c0bb3fb4fa89b16052193638d88~mv2.jpg"
+      },
+      {
+        "titulo": "Detalle de Unbroken",
+        "detalle": "Óleo sobre lienzo",
+        "imagen": "Vadim _ klevenskiy_files/f85da4_b24a40d4fde943fa84479997103803c1~mv2.jpg"
+      },
+      {
+        "titulo": "Atlantic Ocean",
+        "detalle": "Óleo sobre lienzo · 152 × 152 cm",
+        "imagen": "Vadim _ klevenskiy_files/f85da4_404fb1b17e25448c90f8dde43d2c4b51~mv2.jpg"
+      },
+      {
+        "titulo": "Evening Tide",
+        "detalle": "Óleo sobre lienzo · 122 × 92 cm",
+        "imagen": "Vadim _ klevenskiy_files/f85da4_a260204f177146f4b134bbfeadc0e0d2.jpg"
+      },
+      {
+        "titulo": "Crashing Blue",
+        "detalle": "Óleo sobre lienzo · 122 × 122 cm",
+        "imagen": "Vadim _ klevenskiy_files/f85da4_656931fdf5bc49a3a19d14867be89a31.jpg"
+      },
+      {
+        "titulo": "Ocean Dance",
+        "detalle": "Óleo sobre lienzo · 92 × 152 cm",
+        "imagen": "Vadim _ klevenskiy_files/f85da4_ba1fdfd334f248189f47b26bd2d91ff6.jpg"
+      },
+      {
+        "titulo": "Interlude",
+        "detalle": "Óleo sobre lienzo · 152 × 152 cm",
+        "imagen": "Vadim _ klevenskiy_files/f85da4_b73a7458fe694f11b94b6f058e98fc46~mv2.jpg"
+      },
+      {
+        "titulo": "Crystal Water",
+        "detalle": "Óleo sobre lienzo · 152 × 152 cm",
+        "imagen": "Vadim _ klevenskiy_files/f85da4_5447fbebabb04cd598a787311c332208~mv2.jpg"
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Información sobre el artista.">
+  <title>Artista | Obra</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <nav aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a href="obras.html">Obras</a>
+      <a class="activo" href="artista.html">Artista</a>
+    </nav>
+  </header>
+  <main>
+    <section class="seccion artista pagina-interior">
+      <div class="titulo-seccion">
+        <p class="eyebrow">EL ARTISTA</p>
+        <h1 id="nombre-artista">Nombre del artista</h1>
+      </div>
+      <article class="ficha-artista">
+        <div class="retrato-wrap"><img id="retrato-artista" alt="Retrato del artista" hidden></div>
+        <div>
+          <p id="bio-artista">La información sobre el artista aparecerá aquí.</p>
+          <p id="ubicacion-artista" class="ubicacion"></p>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer>© <span id="anio"></span> <span id="pie-nombre">J.L. Ojeda</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>

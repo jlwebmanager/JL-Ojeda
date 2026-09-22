@@ -1,0 +1,45 @@
+:root { --ink:#e8e8e8; --paper:#2d2d2d; --line:#575757; --muted:#ababab; --blue-start:#54c9ff; --blue-end:#4965ff; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:var(--paper); color:var(--ink); font-family:Arial, Helvetica, sans-serif; font-size:16px; }
+.cabecera { height:90px; border-bottom:1px solid var(--line); display:flex; align-items:center; justify-content:flex-end; padding:0 clamp(24px, 7vw, 112px); position:sticky; top:0; z-index:5; background:rgba(45,45,45,.96); backdrop-filter:blur(8px); }
+nav { display:flex; gap:clamp(18px,3vw,46px); }
+nav a { color:var(--ink); text-decoration:none; font-size:12px; letter-spacing:.18em; text-transform:uppercase; padding:10px 0; border-bottom:1px solid transparent; transition:border-color .2s, color .2s; }
+nav a:hover,nav a.activo { color:#70d2ff; border-color:#70d2ff; }
+.seccion { max-width:1240px; margin:auto; padding-left:clamp(24px, 7vw, 112px); padding-right:clamp(24px, 7vw, 112px); }
+.hero { min-height:calc(100vh - 90px); display:flex; flex-direction:column; justify-content:center; padding-top:70px; padding-bottom:70px; border-bottom:1px solid var(--line); }
+.eyebrow { background:linear-gradient(100deg,var(--blue-start),var(--blue-end)); -webkit-background-clip:text; background-clip:text; color:transparent; font-size:11px; font-weight:bold; letter-spacing:.24em; margin:0 0 22px; }
+h1,h2 { background:linear-gradient(120deg,#f5fbff 5%,var(--blue-start) 50%,var(--blue-end) 100%); -webkit-background-clip:text; background-clip:text; color:transparent; font-family:Georgia, 'Times New Roman', serif; font-weight:normal; margin:0; }
+h1 { font-size:clamp(48px, 7.2vw, 104px); line-height:.94; letter-spacing:-.055em; max-width:870px; }
+.intro { max-width:420px; color:var(--muted); line-height:1.65; margin:40px 0 35px; }
+.enlaces-inicio { display:flex; gap:32px; flex-wrap:wrap; }
+.enlaces-inicio a { color:var(--ink); font-size:12px; letter-spacing:.12em; text-transform:uppercase; text-decoration:none; border-bottom:1px solid var(--ink); padding-bottom:8px; }
+.enlaces-inicio span { background:linear-gradient(100deg,var(--blue-start),var(--blue-end)); -webkit-background-clip:text; background-clip:text; color:transparent; font-size:18px; margin-left:10px; }
+.obras, .artista { padding-top:120px; padding-bottom:120px; }
+.pagina-interior { min-height:calc(100vh - 145px); }
+.titulo-seccion { margin-bottom:54px; }
+h2 { font-size:clamp(38px, 5vw, 68px); letter-spacing:-.045em; }
+.galeria { display:grid; grid-template-columns:repeat(3, 1fr); gap:22px; }
+.obra { background:#222; min-width:0; cursor:zoom-in; position:relative; overflow:hidden; }
+.obra img { display:block; width:100%; aspect-ratio:1/1; object-fit:cover; transition:transform .55s cubic-bezier(.2,.7,.2,1); }
+.obra-info { background:var(--paper); padding:13px 0 19px; min-height:73px; }
+.obra-info h3 { font-family:Georgia, 'Times New Roman', serif; font-size:18px; font-weight:normal; margin:0 0 6px; }
+.obra-info p { color:var(--muted); font-size:11px; line-height:1.4; letter-spacing:.04em; margin:0; text-transform:uppercase; }
+.obra:hover img { transform:scale(1.035); }
+.sin-obras { color:var(--muted); }
+.artista { border-top:1px solid var(--line); }
+.ficha-artista { display:grid; grid-template-columns:minmax(170px, .55fr) minmax(0, 1.45fr); gap:clamp(30px, 7vw, 100px); border:1px solid var(--ink); padding:clamp(26px, 4vw, 54px); max-width:900px; }
+.retrato-wrap { background:#222; min-height:190px; }
+.retrato-wrap img { display:block; width:100%; height:100%; min-height:190px; object-fit:cover; filter:grayscale(100%); }
+.ficha-artista p { font-family:Georgia, 'Times New Roman', serif; font-size:clamp(21px, 2.2vw, 29px); font-weight:normal; line-height:1.35; margin:0; }
+.ficha-artista .ubicacion { background:linear-gradient(100deg,var(--blue-start),var(--blue-end)); -webkit-background-clip:text; background-clip:text; color:transparent; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; letter-spacing:.18em; line-height:1.4; margin-top:28px; text-transform:uppercase; }
+.modal { align-items:center; background:rgba(16,16,16,.97); display:none; flex-direction:column; inset:0; justify-content:center; padding:50px 25px 25px; position:fixed; z-index:10; }
+.modal.abierto { display:flex; }
+.modal img { max-height:calc(100vh - 150px); max-width:min(90vw,900px); object-fit:contain; }
+.cerrar { color:white; background:none; border:0; cursor:pointer; font-size:38px; font-weight:200; line-height:1; position:absolute; right:25px; top:17px; }
+.pie-modal { color:white; display:flex; gap:14px; margin-top:14px; max-width:900px; width:100%; }
+.pie-modal strong { font-family:Georgia, 'Times New Roman', serif; font-size:18px; font-weight:normal; }
+.pie-modal span { color:#bbb; font-size:11px; letter-spacing:.06em; text-transform:uppercase; }
+footer { border-top:1px solid var(--line); color:var(--muted); font-size:10px; letter-spacing:.16em; padding:30px clamp(24px,7vw,112px); text-transform:uppercase; }
+@media (max-width:720px) { .cabecera { height:72px; } nav { gap:16px; } nav a { font-size:10px; letter-spacing:.09em; } .hero { min-height:calc(100vh - 72px); } .obras,.artista { padding-top:78px; padding-bottom:78px; } .galeria { grid-template-columns:repeat(2,1fr); gap:12px; } .obra-info h3 { font-size:16px; } .obra-info p { font-size:9px; } .ficha-artista { grid-template-columns:1fr; } .retrato-wrap { max-width:180px; } }
+@media (max-width:410px) { .galeria { grid-template-columns:1fr; } }

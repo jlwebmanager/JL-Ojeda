@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Colección de obra pictórica.">
+  <title>Inicio | Obra</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <nav aria-label="Navegación principal">
+      <a class="activo" href="index.html">Inicio</a>
+      <a href="obras.html">Obras</a>
+      <a href="artista.html">Artista</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero seccion">
+      <p class="eyebrow">PINTURA CONTEMPORÁNEA</p>
+      <h1>Una mirada al<br>movimiento del agua.</h1>
+      <p class="intro" id="texto-bienvenida">Bienvenido a este espacio de pintura. Recorre las obras y conoce al artista.</p>
+      <div class="enlaces-inicio">
+        <a href="obras.html">Ver obras <span>→</span></a>
+        <a href="artista.html">Conocer al artista <span>→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Vista ampliada de la obra">
+    <button class="cerrar" type="button" aria-label="Cerrar">×</button>
+    <img id="imagen-modal" alt="">
+    <div class="pie-modal"><strong id="titulo-modal"></strong><span id="detalle-modal"></span></div>
+  </div>
+  <footer>© <span id="anio"></span> <span id="pie-nombre">Obra</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
